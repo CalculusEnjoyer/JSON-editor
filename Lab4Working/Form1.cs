@@ -182,10 +182,6 @@ namespace Lab4Working
             }
         }
 
-        private void dataGridView1_CellValidated(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {

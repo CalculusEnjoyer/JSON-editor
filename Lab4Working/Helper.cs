@@ -8,9 +8,9 @@ namespace Lab4Working
 {
     internal class Helper
     {
-        private Helper(){ }
+        private Helper() { }
 
-        public static Laptop CreateLaptopFromStringValues(string ID, string Producer, string Model, 
+        public static Laptop CreateLaptopFromStringValues(string ID, string Producer, string Model,
             string CpuProducer, string NumberOfCores, string Diagonal, string YearOfRealise)
         {
             int id;

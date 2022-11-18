@@ -11,7 +11,7 @@ namespace Lab4Working
     {
         private Filter() { }
 
-        public static IEnumerable<Laptop> FilterByProducer(String producer, List<Laptop> input) 
+        public static IEnumerable<Laptop> FilterByProducer(String producer, List<Laptop> input)
         {
             return from l in input where l.Producer.Equals(producer) select l;
         }

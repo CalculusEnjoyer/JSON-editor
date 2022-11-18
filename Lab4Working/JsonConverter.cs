@@ -13,7 +13,8 @@ namespace Lab4Working
     {
         private JsonConverter() { }
 
-        public static List<Laptop> DeserialiseFromJson (String path) {
+        public static List<Laptop> DeserialiseFromJson(String path)
+        {
             using (FileStream fstream = new FileStream(path, FileMode.Open))
             {
 
