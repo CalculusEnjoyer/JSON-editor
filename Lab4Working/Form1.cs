@@ -11,26 +11,6 @@ namespace Lab4Working
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-
-        }
-
-        private void contextMenuStrip1_Opening(object sender, System.ComponentModel.CancelEventArgs e)
-        {
-
-        }
-
-        private void test1ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void RefreshDataGrid(List<Laptop> laptops, DataGridView dataGridView)
         {
             dataGridView.ClearSelection();
@@ -54,15 +34,6 @@ namespace Lab4Working
             this.RefreshDataGrid(LaptopHandler.Laptops, dataGridView1);
         }
 
-        private void testToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -148,11 +119,6 @@ namespace Lab4Working
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             _isSaved = false;
-        }
-
-        private void dataGridView1_CurrentCellChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void dataGridView1_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -242,16 +208,6 @@ namespace Lab4Working
             RefreshDataGrid(LaptopHandler.FilteredLaptops, dataGridView1);
         }
 
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkBox2_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (_isSaved) return;
@@ -277,6 +233,7 @@ namespace Lab4Working
                 }
                 else
                 {
+                    _isSaved = true;
                     Application.Exit();
                 }
             }
