@@ -1,0 +1,92 @@
+[
+  {
+    "ID": 1,
+    "Producer": "Lenovo",
+    "Model": "IdeaPad",
+    "CpuProducer": "Intel",
+    "NumberOfCores": 8,
+    "Diagonal": 15,
+    "YearOfRealise": 2020
+  },
+  {
+    "ID": 2,
+    "Producer": "Apple",
+    "Model": "Air",
+    "CpuProducer": "M1",
+    "NumberOfCores": 16,
+    "Diagonal": 123,
+    "YearOfRealise": 2022
+  },
+  {
+    "ID": 112,
+    "Producer": "Lenovo",
+    "Model": "Cool",
+    "CpuProducer": "AMD",
+    "NumberOfCores": 4,
+    "Diagonal": 1,
+    "YearOfRealise": 2021
+  },
+  {
+    "ID": 4,
+    "Producer": "Apple",
+    "Model": "Pro",
+    "CpuProducer": "Intel",
+    "NumberOfCores": 8,
+    "Diagonal": 15,
+    "YearOfRealise": 2017
+  },
+  {
+    "ID": 5,
+    "Producer": "Dell",
+    "Model": "Pro",
+    "CpuProducer": "Intel",
+    "NumberOfCores": 4,
+    "Diagonal": 15,
+    "YearOfRealise": 2020
+  },
+  {
+    "ID": 6,
+    "Producer": "Apple",
+    "Model": "Pro",
+    "CpuProducer": "Intel",
+    "NumberOfCores": 8,
+    "Diagonal": 15,
+    "YearOfRealise": 2020
+  },
+  {
+    "ID": 7,
+    "Producer": "Apple",
+    "Model": "Desktop",
+    "CpuProducer": "Intel",
+    "NumberOfCores": 4,
+    "Diagonal": 15,
+    "YearOfRealise": 2020
+  },
+  {
+    "ID": 8,
+    "Producer": "Xiaomi",
+    "Model": "Mi",
+    "CpuProducer": "Snapdragon",
+    "NumberOfCores": 16,
+    "Diagonal": 12,
+    "YearOfRealise": 2022
+  },
+  {
+    "ID": 21,
+    "Producer": "Google",
+    "Model": "ChromeBook",
+    "CpuProducer": "MediaTech",
+    "NumberOfCores": 8,
+    "Diagonal": 10,
+    "YearOfRealise": 2021
+  },
+  {
+    "ID": 1312,
+    "Producer": "Google",
+    "Model": "ChromeBook",
+    "CpuProducer": "MediaTech",
+    "NumberOfCores": 12,
+    "Diagonal": 10,
+    "YearOfRealise": 2021
+  }
+]
