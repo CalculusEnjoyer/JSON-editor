@@ -9,7 +9,6 @@ namespace Lab4Working
     internal class LaptopHandler
     {
         private LaptopHandler() { }
-        public static int PARAMETERS_COUNT = 7;
 
         private static string _filePath = "D:/Default.json";
         public static string FilePath { get => _filePath; set => _filePath = value; }

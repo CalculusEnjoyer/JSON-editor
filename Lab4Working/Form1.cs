@@ -5,7 +5,7 @@ namespace Lab4Working
 {
     public partial class Form1 : Form
     {
-        private Boolean _isSaved = false;
+        private Boolean _isSaved = true;
         public Form1()
         {
             InitializeComponent();
@@ -62,9 +62,10 @@ namespace Lab4Working
                     LaptopHandler.FilePath = openFileDialog1.FileName;
                     LaptopHandler.Laptops = JsonConverter.DeserialiseFromJson(LaptopHandler.FilePath);
                     this.RefreshDataGrid(LaptopHandler.Laptops, dataGridView1);
+                    this._isSaved = true;
                 } catch (Exception ex)
                 {
-                    MessageBox.Show("Wrong file format", "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Wrong file structure", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
@@ -242,6 +243,12 @@ namespace Lab4Working
                 MessageBox.Show("Saving Failed:" + ex.Message.ToString(), "Save",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Lab project for editing JSONs.\nMade by Volodymyr Kravchuk, K-26 student.",
+                "JSON editor");
         }
     }
 }
