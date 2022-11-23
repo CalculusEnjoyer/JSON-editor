@@ -141,12 +141,32 @@ namespace Lab4Working
         {
             if (e.RowIndex < 0) return;
             double temp;
-            if (double.TryParse(e.FormattedValue.ToString(), out temp) && temp <0)
+            if (e.ColumnIndex == 0 && double.TryParse(e.FormattedValue.ToString(), out temp) && temp <0)
             {
                     MessageBox.Show(dataGridView1.Columns[e.ColumnIndex].Name + " have to be greater than 0.",
                 "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     e.Cancel = true;
             }
+            else if (e.ColumnIndex == 4 && double.TryParse(e.FormattedValue.ToString(), out temp) && (temp < 0 || temp > 1024))
+            {
+                MessageBox.Show("Wrong data. Number of cores should be in 1 to 1024",
+            "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true;
+            }
+            else if (e.ColumnIndex == 5 && double.TryParse(e.FormattedValue.ToString(), out temp) && (temp < 0 || temp > 100))
+            {
+                MessageBox.Show("Wrong data. Diagonal should be in 0 to to 100",
+            "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true;
+            }
+            else if (e.ColumnIndex == 6 && double.TryParse(e.FormattedValue.ToString(), out temp) && (temp < 1900 || temp > 2022))
+            {
+                MessageBox.Show("Wrong data. Year should be in 1900 to 2022",
+            "Error: ", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                e.Cancel = true;
+            }
+
+
         }
 
 
